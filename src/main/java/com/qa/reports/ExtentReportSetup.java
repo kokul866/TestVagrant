@@ -1,5 +1,7 @@
 package com.qa.reports;
+import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -14,6 +16,13 @@ public class ExtentReportSetup extends TestBase {
 	public static ExtentSparkReporter sparkReport;
 
 	public static ExtentReports extentReportSetup() {
+
+		try {
+			FileUtils.deleteDirectory(Constants.reportFolder);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		sparkReport = new ExtentSparkReporter(Constants.reportspath);
 
 		extent = new ExtentReports();

@@ -1,5 +1,7 @@
 package com.qa.constants;
 
+import java.io.File;
+
 import com.qa.utilities.TestUtility;
 
 public class Constants {
@@ -11,6 +13,7 @@ public class Constants {
 	public static final String projectpath = System.getProperty("user.dir");
 	public static final String configpath = projectpath+ "\\src\\main\\java\\com\\qa\\config\\Configuration.properties";
 	public static final String testdatapath = projectpath + "\\src\\main\\java\\com\\qa\\testdata\\movieList.xlsx";
-	public static final String reportspath = projectpath + "\\ExtentResults\\ExtentReport" + TestUtility.getSystemDate()+ ".html";
+	public static final File reportFolder = new File(projectpath + "\\ExtentResults");
+	public static final String reportspath = projectpath + "\\ExtentResults\\TestReport.html";
 
 }
