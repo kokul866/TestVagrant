@@ -34,6 +34,7 @@ public class Test1 extends TestBase {
 
 	@Test(enabled = true, dataProvider = "testdata")
 	public void CompareMovieReleaseDateandCountry(String movieName) throws InterruptedException, IOException {
+		DriverManager.getDriver().get(property.getProperty("imdbUrl"));
 		imdbPO.imdbSearch(movieName);
 		imdbPO.clickOnSearchResult();
 		String imdbReleaseDate = imdbPO.getReleaseDate();
