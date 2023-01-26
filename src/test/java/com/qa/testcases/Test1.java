@@ -24,7 +24,7 @@ public class Test1 extends TestBase {
 		String wikiCountry = wikiPO.getCountry();
 		Assert.assertEquals(imdbCountry, wikiCountry);
 		Assert.assertEquals(imdbReleaseDate, wikiReleaseDate);
-	}
+	} 
 
 	@DataProvider(name = "testdata")
 	public Object[][] data() throws IOException {
