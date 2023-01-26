@@ -17,7 +17,6 @@ public class Test1 extends TestBase {
 		imdbPO.clickOnSearchResult();
 		String imdbReleaseDate = imdbPO.getReleaseDate();
 		String imdbCountry = imdbPO.getCountry();
-		DriverManager.getDriver().get(property.getProperty("wikiUrl"));
 		wikiPO.loadWikiUrl();
 		wikiPO.wikiSearch(movieName);
 		wikiPO.clickOnSearchResult();
