@@ -8,7 +8,6 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.qa.base.TestBase;
 import com.qa.constants.Constants;
-import com.qa.utilities.TestUtility;
 
 public class ExtentReportSetup extends TestBase {
 	public static ExtentReports extent;

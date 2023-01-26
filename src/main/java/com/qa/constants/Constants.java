@@ -2,8 +2,6 @@ package com.qa.constants;
 
 import java.io.File;
 
-import com.qa.utilities.TestUtility;
-
 public class Constants {
 
 	public static final int PAGE_LOAD_TIMEOUT = 20;

@@ -16,9 +16,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-
 import com.qa.constants.Constants;
 import com.qa.locators.imdbPageLocators;
 import com.qa.locators.wikiPageLocators;
@@ -95,7 +93,6 @@ public class TestBase {
 		DriverManager.setWebDriver(driver);
 		driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		driver.get(property.getProperty("imdbUrl"));
 	}
 
 	@BeforeMethod(alwaysRun = true)
@@ -111,7 +108,7 @@ public class TestBase {
 	}
 
 	@AfterMethod(alwaysRun = true)
-	public void tearDown() throws IOException {
+	public void tearDown() {
 		driver.quit();
 	}
 
