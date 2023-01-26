@@ -112,11 +112,11 @@ public class TestBase {
 
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() throws IOException {
-		driver.close();
-	}
-
-	@AfterSuite(alwaysRun = true)
-	public void quit() throws IOException {
 		driver.quit();
 	}
+
+//	@AfterSuite(alwaysRun = true)
+//	public void quit() throws IOException {
+//		driver.quit();
+//	}
 }
