@@ -291,33 +291,4 @@ public class TestUtility extends TestBase {
 		javaScript = ((JavascriptExecutor) DriverManager.getDriver());
 		javaScript.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
-
-//		public Object[][] gettestdata(String sheetname) {
-//			FileInputStream file = null;
-//			try {
-//				file = new FileInputStream(Constants.testdatapath);
-//			} catch (FileNotFoundException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//			XSSFWorkbook book = null;
-//			try {
-//				book = new XSSFWorkbook(file);
-//			} catch (IOException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//			XSSFSheet sheet=book.getSheet(sheetname);
-//			Object[][] data=new String[sheet.getLastRowNum()][sheet.getRow(1).getLastCellNum()];
-//			for(int i=0;i<sheet.getLastRowNum();i++)
-//			{
-//				for(int j=0;j<sheet.getRow(1).getLastCellNum();j++)
-//				{
-//					data[i][j]=sheet.getRow(i+1).getCell(j).toString();
-//				}
-//			}
-//			return data;
-//			
-//		}
-
 }
