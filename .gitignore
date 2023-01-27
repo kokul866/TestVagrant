@@ -1,6 +1,7 @@
-target\
+/target/
+*/target/**
+**/META-INF/
 .metadata
 .settings/
 .classpath
 .project
-debug.log
