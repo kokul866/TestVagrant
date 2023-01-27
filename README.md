@@ -35,7 +35,7 @@ Failed Test Screenshot that gets added into Extent Report
 
 Integrated framework with Teamcity for CI
 
-Team City Build Link: https://test1234.teamcity.com/buildConfiguration/TestVagrantSdet_SeleniumFramework .Click on run to execute test manually in TeamCity linux VM's
+Team City Build Link: https://test1234.teamcity.com/buildConfiguration/TestVagrantSdet_Selenium .Click on run to execute test manually in TeamCity linux VM's
 
 
 SetUp Framework in your Local Machine:
